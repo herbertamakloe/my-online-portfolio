@@ -9,9 +9,14 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_rivd7qd', 'template_v3r2bip', form.current, '9fZS1pRxY5ddLAIdv')
       .then((result) => {
           console.log(result.text);
+					console.log("Message sent");
+					document.querySelector(".form_name").value = ""
+					document.querySelector(".form_email").value = ""
+					document.querySelector(".company_name").value = ""
+					document.querySelector(".form_message").value = ""
       }, (error) => {
           console.log(error.text);
       });

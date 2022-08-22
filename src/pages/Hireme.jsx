@@ -31,9 +31,7 @@ const Hireme = () => {
 			/>
 			<div className="hiremecontainer">
 				<div className="hireme_text">
-					<h1>
-						let's start <span>something</span> together.
-					</h1>
+					<h1 className="hireme_title">let's start something together.</h1>
 				</div>
 				<div className="divider"></div>
 

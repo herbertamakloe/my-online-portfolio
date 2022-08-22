@@ -1,4 +1,10 @@
+.contact_form,
 .contact_form form {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 
 .name_email {
@@ -46,4 +52,29 @@
 	width: 100%;
 	padding: 15px 0;
 	cursor: pointer;
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+	.form_message {
+		width: 100%;
+	}
+}
+
+@media (max-width: 812px) {
+	.contact_form form {
+		width: 90%;
+		margin: auto;
+	}
+	.name_email {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.form_name,
+	.form_email {
+		width: 100%;
+	}
+	.form_message {
+		width: 100%;
+	}
 }

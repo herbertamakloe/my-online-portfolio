@@ -16,7 +16,7 @@ const Footer = () => {
 					className="downlaodCV"
 					href="https://drive.google.com/uc?export=download&id=1XwfL2xvyhtP5qKcsOV9wH6h0dST8K6HT"
 				>
-					downlaod Resume
+					download Resume
 				</a>
 				<a href="tel:+233201599071">+233 (0) 20 159 9071</a>
 			</div>
