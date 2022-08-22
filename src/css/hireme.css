@@ -1,0 +1,43 @@
+.hiremecontainer {
+	width: 980px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 100px auto;
+}
+
+.hireme_text {
+}
+
+.hireme_text h1 {
+	font-size: 70px;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.hireme_text h1 span {
+	color: #3257e1;
+	width: 100%;
+}
+
+.divider::before {
+	content: "";
+	width: 2px;
+	height: 500px;
+	background: rgb(53, 53, 53);
+	display: block;
+	border-radius: 20px;
+	margin: 0 35px;
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+	.hiremecontainer {
+		display: block;
+		width: 90%;
+		margin: auto;
+	}
+	.divider::before {
+		display: none;
+	}
+}

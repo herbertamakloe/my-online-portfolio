@@ -1,0 +1,21 @@
+/* .scrollSlider {
+	display: flex;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	transform: translateX(50px);
+} 
+
+.scroll-horizontal {
+	overflow: none !important;
+}
+
+.scroll-horizontal > div {
+	position: relative !important;
+}
+*/
+
+.slick-slider {
+	width: 1520px;
+	margin: auto;
+}

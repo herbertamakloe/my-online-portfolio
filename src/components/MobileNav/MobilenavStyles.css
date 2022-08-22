@@ -1,0 +1,96 @@
+.DropdownContainer {
+	position: fixed;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	background: #0d0d0d;
+	display: grid;
+	align-items: center;
+	top: 0;
+	left: 0;
+	transition: 0.3s ease-in-out;
+	/* margin-left: 100px; */
+}
+
+.CloseBtnContainer {
+	position: absolute;
+	top: 1.7rem;
+	right: 1.7rem;
+	background: transparent;
+	font-size: 2.5rem;
+	cursor: pointer;
+	outline: none;
+}
+
+.CloseIcon {
+	color: #fff;
+	transform: rotate(45deg);
+	/* font-weight: 100; */
+}
+
+.DropdownWrapper {
+	color: #fff;
+}
+
+.DropdownMenu {
+	display: block;
+}
+
+.DropdownMenu a {
+	margin: 35px 0;
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	text-decoration: none;
+	list-style: none;
+	transition: 0.2s ease-in-out;
+	color: #fff;
+	cursor: pointer;
+}
+
+.DropdownMenu a:hover {
+	color: #256ce1;
+	transition: 0.2s ease-in-out;
+}
+
+.DropBtnWrap {
+	display: flex;
+	justify-content: center;
+}
+
+.DropBtnWrap .DropdownRoute {
+	/*margin: 80px 0; */
+	border-radius: 50px;
+	background: #256ce1;
+	white-space: nowrap;
+	padding: 16px 64px; /**/
+	color: #ffffff;
+	font-size: 25px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.DropBtnWrap .DropdownRoute:hover {
+	transition: all 0.2s ease-in-out;
+	background: #fff;
+	color: #010606;
+}
+
+/* @media screen and (max-width: 1025px) {
+	.DropdownContainer {
+		display: none;
+	}
+} */
+
+@media screen and (max-width: 780px) {
+	/* .DropdownContainer {
+		display: block;
+	} */
+	.DropdownMenu {
+		grid-template-rows: repeat(6, 60px);
+	}
+}
