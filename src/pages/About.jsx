@@ -106,8 +106,8 @@ const About = () => {
 						<h1>technologies i use</h1>
 					</div>
 
-					<div class="marquee">
-						<div class="marquee--inner">
+					<div className="marquee">
+						<div className="marquee--inner">
 							<span>
 								<div className="tech">xd</div>
 								<div className="tech red">react</div>

@@ -244,22 +244,22 @@ div.sticky {
 	.headerImage .recTwo,
 	.headerImage .recThree,
 	.headerImage .recFour {
-		width: 13px;
+		width: 10px;
 	}
 
 	.headerImage .recOne {
-		left: 45px;
+		left: 20px;
 	}
 	.headerImage .recTwo {
 		bottom: 0px;
-		right: 32px;
+		right: 10px;
 	}
 	.headerImage .recThree {
-		right: 50px;
-		top: 80px;
+		right: 45px;
+		top: 40px;
 	}
 	.headerImage .recFour {
-		left: 120px;
+		left: 65px;
 		bottom: 20px;
 	}
 }
@@ -297,7 +297,7 @@ div.sticky {
 		line-height: 1.5;
 	}
 
-	.headerText p {
+	.headerText h3 {
 		font-size: 30px;
 		font-weight: 200;
 	}
@@ -321,19 +321,19 @@ div.sticky {
 	}
 
 	.headerImage .recOne {
-		left: 34px;
+		left: 20px;
 	}
 	.headerImage .recTwo {
-		bottom: 0px;
-		right: 32px;
+		bottom: -15px;
+		right: 25px;
 	}
 	.headerImage .recThree {
-		right: 80px;
-		top: 160px;
+		right: 65px;
+		top: 30px;
 	}
 	.headerImage .recFour {
-		left: 120px;
-		bottom: 40px;
+		left: 70px;
+		bottom: 25px;
 	}
 
 	.typing {
@@ -401,6 +401,6 @@ div.sticky {
 
 	.headerImage {
 		width: 100%;
-		margin: auto;
+		margin: 50px auto;
 	}
 }

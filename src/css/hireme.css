@@ -6,8 +6,8 @@
 	margin: 100px auto;
 }
 
-.hireme_text {
-}
+/* .hireme_text {
+} */
 
 .hireme_text h1 {
 	font-size: 70px;
@@ -16,7 +16,7 @@
 	letter-spacing: 1px;
 }
 
-.somethingTxt {
+.togetherTxt {
 	color: #3257e1;
 	width: 100%;
 }
@@ -55,8 +55,8 @@
 		margin: auto;
 	}
 	.hireme_text .hireme_title {
-		font-size: 20px;
-		margin: 15px 0;
+		font-size: 30px;
+		margin: 45px 0 35px 0;
 		text-align: center;
 	}
 	.divider::before {

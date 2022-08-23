@@ -1,3 +1,7 @@
+.contact_form {
+	position: relative;
+}
+
 .contact_form,
 .contact_form form {
 	display: flex;
@@ -54,6 +58,25 @@
 	cursor: pointer;
 }
 
+.success_message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 0px;
+	overflow: hidden;
+	margin: auto;
+	transition: all 0.5s ease-in-out;
+}
+.success_message img {
+	width: 300px;
+}
+
 @media (min-width: 810px) and (max-width: 1080px) {
 	.form_message {
 		width: 100%;
@@ -76,5 +99,8 @@
 	}
 	.form_message {
 		width: 100%;
+	}
+	.success_message img {
+		width: 180px;
 	}
 }
