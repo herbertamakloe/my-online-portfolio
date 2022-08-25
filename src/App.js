@@ -7,6 +7,9 @@ import React from "react";
 // import Mobilenav from "./components/MobileNav/Mobilenav";
 import Hireme from "./pages/Hireme";
 import Resume from "./pages/Resume";
+import ReactGA from "react-ga";
+const TRACKING_ID = "UA-238434903-1"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 // import "../src/css/App.css";
 
 function App() {

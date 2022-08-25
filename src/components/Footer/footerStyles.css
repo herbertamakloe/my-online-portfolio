@@ -23,12 +23,12 @@
 }
 
 .footer-logo {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .footer-logo img {
 	width: 70px;
-  opacity: 0.6;
+	opacity: 0.6;
 }
 
 .footer-logo,
@@ -65,7 +65,7 @@
 	color: #fff;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (max-width: 812px) {
 	.footer::before {
 		border-radius: 50% 50% 0 0/30% 30% 0 0;
 		transform: scaleX(1.5);
@@ -73,9 +73,10 @@
 
 	.footer-content,
 	.footer-content a {
-		display: block;
+		/* display: block; */
 		margin: 25px auto;
 		text-align: center;
+		flex-direction: column;
 	}
 
 	.footer-content .downlaodCV {

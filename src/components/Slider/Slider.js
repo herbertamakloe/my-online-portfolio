@@ -69,6 +69,7 @@ const Slider = () => {
 								<Card
 									background={data.url}
 									link={data.link}
+									github={data.github}
 									title={data.title}
 								/>
 							</li>
