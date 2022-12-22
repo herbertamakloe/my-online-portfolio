@@ -34,7 +34,7 @@ const Resume = () => {
 			<div className="resume-container">
 				<div className="cvWrap">
 					<div className="cvPic">
-						<img src={cvImage} />
+						<img src={cvImage} alt=""/>
 						<div className="cv-overlay">
 							<div className="btn">
 								<form action="https://drive.google.com/file/d/1ttlVzw0o3tqtkUjyvdtae8inS69-jbqN/view?usp=sharing">

@@ -6,8 +6,9 @@
 	margin: 100px auto;
 }
 
-/* .hireme_text {
-} */
+.hireme_text {
+	width: 50%;
+}
 
 .hireme_text h1 {
 	font-size: 70px;

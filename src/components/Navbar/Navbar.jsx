@@ -6,7 +6,7 @@ import "./NavbarStyles.css";
 
 const Navbar = (props) => {
 	return (
-		<header>
+		<header data-scroll-section>
 			<div className="navigation">
 				<div className="logo-container">
 					<Link to="/">

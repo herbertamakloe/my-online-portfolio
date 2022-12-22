@@ -4,8 +4,8 @@
 } */
 
 .header,
-.portfolio p,
-.portfolio h1,
+.selected-projects-title,
+.case-study-title,
 .social-handle,
 .lwt_holder {
 	width: 980px;
@@ -139,13 +139,13 @@ div.sticky {
 	top: 0;
 }
 
-.portfolio p {
+.selected-projects-title {
 	text-transform: uppercase;
 	color: rgb(130, 130, 130);
 	font-size: 23px;
 }
 
-.portfolio h1 {
+.case-study-title {
 	font-size: 60px;
 	font-weight: 600;
 }

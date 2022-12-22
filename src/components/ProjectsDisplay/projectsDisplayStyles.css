@@ -1,0 +1,205 @@
+.display-wrap {
+	height: 80vh;
+	padding: 10vh 0;
+	width: 400%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.case-study-wrapper {
+	aspect-ratio: 16/9;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 20vw 1fr 200px;
+	width: 100vw;
+}
+
+.case-study {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	will-change: transform;
+}
+
+.case-study-text {
+	/* background: indigo; */
+	width: 350px;
+	position: relative;
+} /* */
+
+.case-study-number {
+	position: absolute;
+	font-size: 180px;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	opacity: 0.147;
+}
+
+.case-study-preview,
+.case-study-text {
+	margin: 0 7px;
+}
+
+.case-study-description {
+	/* top: 50%;
+	left: 50%;
+	transform: translate();*/
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.case-study-preview {
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.case-study-img {
+	border-radius: 50px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.case-study-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.case-study-buttons {
+	display: flex;
+}
+.case-study-buttons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	border-radius: 100px;
+	margin: 10px 12px;
+	text-decoration: none;
+}
+
+.view-on-hover {
+	opacity: 0;
+	font-size: 0;
+	transition: all 0.5s ease-out;
+}
+
+.case-study-buttons a:hover .view-on-hover {
+	opacity: 1;
+	width: 100%;
+	font-size: 16px;
+	margin: 0 3px;
+}
+
+.case-study-buttons a svg {
+	font-size: 45px;
+  position: relative;
+  z-index: 20;
+}
+.view-btn {
+	background-color: #3257e1;
+	color: #ffffff;
+}
+.github-btn {
+	background: #ffffff;
+	color: rgba(51, 51, 51);
+}
+
+/* .case-study-text-wrapper {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} */
+
+/* .case-study-text-wrapper div {
+	width: 100%;
+	position: absolute;
+}
+
+.case-study-number {
+	font-size: 180px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-63%, -63%);
+	opacity: 0.147;
+}
+
+.case-study-description {
+	top: 50%;
+	left: 50%;
+	transform: translate(-45%, -45%);
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.case-study-preview,
+.case-study-text {
+	margin: 0 20px;
+}
+
+.case-study-preview {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.case-study-img {
+	border-radius: 50px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.case-study-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.case-study-buttons {
+	display: flex;
+}
+.case-study-buttons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	border-radius: 100px;
+	margin: 10px 12px;
+	text-decoration: none;
+}
+
+.view-on-hover {
+	opacity: 0;
+	font-size: 0;
+	transition: all 0.5s ease-out;
+}
+
+.case-study-buttons a:hover .view-on-hover {
+	opacity: 1;
+	width: 100%;
+	font-size: 16px;
+	margin: 0 3px;
+}
+
+.case-study-buttons a svg {
+	font-size: 45px;
+  position: relative;
+  z-index: 20;
+}
+.view-btn {
+	background-color: #3257e1;
+	color: #ffffff;
+}
+.github-btn {
+	background: #ffffff;
+	color: rgba(51, 51, 51);
+} */
