@@ -86,6 +86,9 @@
 }
 
 @media (max-width: 812px) {
+	.contact_form {
+		width: 100%;
+	}
 	.contact_form form {
 		width: 90%;
 		margin: auto;

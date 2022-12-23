@@ -8,7 +8,6 @@ import React from "react";
 import Hireme from "./pages/Hireme";
 import Resume from "./pages/Resume";
 import ReactGA from "react-ga";
-import Preloader from "./components/Preloader/Preloader";
 
 const TRACKING_ID = "UA-238434903-1"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);

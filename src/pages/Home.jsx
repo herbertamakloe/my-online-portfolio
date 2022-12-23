@@ -9,15 +9,16 @@ import sideRecThree from "../images/sd-rt-bnw.svg";
 import sideRecFour from "../images/sd-rt-border.svg";
 import Typical from "react-typical";
 import "../css/home.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
-import Slider from "../components/Slider/Slider";
+// import Slider from "../components/Slider/Slider";
 import ProjectsCarousel from "../components/ProjectsCarousel/ProjectsCarousel";
 import Lwt from "../components/Lwt/Lwt";
 import FloatingSocials from "../components/FloatingSocials/FloatingSocials";
-import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
+// import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
 import Preloader from "../components/Preloader/Preloader";
 import useLocoScroll from "../components/hooks/useLocoScroll";
+import "../components/hooks/locomotiveScroll.css";
 // import Gallery from "../components/Gallery/Gallery";
 // import PortfolioSlider from "../components/PortfolioSlider/PortfolioSlider";
 // import "slick-carousel/slick/slick.css";
@@ -54,7 +55,7 @@ const Home = () => {
 	}, []);
 
 	useEffect(() => {
-		if (timer == 0) {
+		if (timer === 0) {
 			clear();
 		}
 	}, [timer]);
@@ -83,7 +84,7 @@ const Home = () => {
 								<span className="typing">
 									<Typical
 										loop={Infinity}
-										wrapper="l"
+										wrapper="div"
 										steps={[
 											"Web Developer",
 											2000,

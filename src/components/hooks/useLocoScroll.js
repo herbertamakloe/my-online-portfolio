@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import LocomotiveScrollReact from "react-locomotive-scroll";
-import "locomotive-scroll/src/locomotive-scroll";
+// import LocomotiveScrollReact from "react-locomotive-scroll";
+// import "locomotive-scroll/src/styles/lo";
+import "./locomotiveScroll.css";
 
 const useLocoScroll = (start) => {
 	useEffect(() => {

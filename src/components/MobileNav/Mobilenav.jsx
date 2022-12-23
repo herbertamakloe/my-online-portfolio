@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./MobilenavStyles.css";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Mobilenav = (props) => {
-	const [test, setTest] = useState(true);
+	// const [test, setTest] = useState(true);
 
 	// function handleTest() {
 	// 	setTest(!test);

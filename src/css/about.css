@@ -1,7 +1,15 @@
-.container {
+/* .container {
+	width: 980px;
+	margin: auto;
+} */
+
+.intro_section,
+.expert_section,
+.tech_section {
 	width: 980px;
 	margin: auto;
 }
+
 .intro_section {
 	margin-top: 50px;
 	display: flex;
@@ -242,13 +250,14 @@
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
-	.container {
+	.intro_section,
+	.expert_section,
+	.tech_section {
 		width: 90%;
 		margin: auto;
 	}
 	.intro_section {
 		display: block;
-		width: 100%;
 	}
 	.intro_text h1,
 	.expert_text h1,

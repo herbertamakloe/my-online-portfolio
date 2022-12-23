@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import galleryData from "../../data/slideData";
-import ProjectsDisplay from "../ProjectsDisplay/ProjectsDisplay";
+// import ProjectsDisplay from "../ProjectsDisplay/ProjectsDisplay";
 import "./portfolioSection.css"
 
 const PorfolioItem = ({

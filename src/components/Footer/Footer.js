@@ -4,7 +4,7 @@ import footerLogo from "../../images/herb-logo-o.png";
 
 const Footer = () => {
 	return (
-		<div className="footer" data-scroll-section>
+		<div className="footer">
 			<div className="footer-logo">
 				<img src={footerLogo} alt="" />
 			</div>
