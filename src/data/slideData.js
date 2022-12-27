@@ -13,7 +13,7 @@ const slideData = [
 		github: "https://github.com/herbertamakloe/weather-web-app-js",
 		title: "Weather Web App",
 		description:
-			"A To-Do list application built with React JS. With this app you can check off the activies you've done and delete them later.",
+			"A weather application built with HTML, CSS and JavaScript. The app allows you to check for the weather in any city in the world.",
 	},
 	{
 		url: "backgrounds/CIWP-image.jpg",
@@ -21,7 +21,7 @@ const slideData = [
 		github: "https://github.com/herbertamakloe/country-info-app-js",
 		title: "Country Info Web App",
 		description:
-			"A To-Do list application built with React JS. With this app you can check off the activies you've done and delete them later.",
+			"This application built with HTML, CSS and JavaScript gives you the freedom to check out few key information about a country. For example the country's population.",
 	},
 	{
 		url: "backgrounds/FCG-image.jpg",
@@ -29,7 +29,7 @@ const slideData = [
 		github: "https://github.com/herbertamakloe/Flip-card-Game",
 		title: "Flip Card Game",
 		description:
-			"A To-Do list application built with React JS. With this app you can check off the activies you've done and delete them later.",
+			"Let's play a little with this Flip Card game application. The goal is match all the shapes of the same type until there aren't anymore shapes to match. HAVE FUN PLAYING!",
 	},
 	{
 		url: "backgrounds/EE-image.jpg",
@@ -37,7 +37,7 @@ const slideData = [
 		github: "https://github.com/herbertamakloe/image-editor",
 		title: "Photo Editor",
 		description:
-			"A To-Do list application built with React JS. With this app you can check off the activies you've done and delete them later.",
+			"Spice up your photos with this photo editing application built with HTML, CSS and JavaScript.",
 	},
 ];
 

@@ -1,0 +1,228 @@
+/* This is css for individual case study */
+
+.case-study-item {
+	aspect-ratio: 16/9;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 20vw 1fr 200px;
+	width: 100vw;
+}
+
+.case-study {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	will-change: transform;
+}
+
+.case-study-text {
+	/* background: indigo; */
+	width: 350px;
+	position: relative;
+} /* */
+
+.case-study-number {
+	position: absolute;
+	font-size: 180px;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	opacity: 0.147;
+}
+
+.case-study-preview,
+.case-study-text {
+	margin: 0 7px;
+}
+
+.case-study-description {
+	/* top: 50%;
+	left: 50%;
+	transform: translate();*/
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.case-study-preview {
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.case-study-img {
+	border-radius: 50px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.case-study-img img {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.case-study-buttons {
+	display: flex;
+}
+.case-study-buttons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	border-radius: 100px;
+	margin: 10px 12px;
+	text-decoration: none;
+}
+
+.view-on-hover {
+	opacity: 0;
+	font-size: 0;
+	transition: all 0.5s ease-out;
+}
+
+.case-study-buttons a:hover .view-on-hover {
+	opacity: 1;
+	width: 100%;
+	font-size: 16px;
+	margin: 0 3px;
+}
+
+.case-study-buttons a svg {
+	font-size: 45px;
+	position: relative;
+	z-index: 20;
+}
+.view-btn {
+	background-color: #3257e1;
+	color: #ffffff;
+}
+.github-btn {
+	background: #ffffff;
+	color: rgba(51, 51, 51);
+}
+
+/* The reveal */
+.is-reveal {
+	transform: scale(1);
+	filter: none;
+}
+
+/* This is css for carousel */
+
+.case-study-wrapper {
+	overflow-x: hidden !important;
+}
+
+.display-wrap {
+	height: 80vh;
+	padding: 10vh 0;
+	width: 400%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* 
+*
+*
+*
+******Tablet Media Query */
+@media (min-width: 810px) and (max-width: 1080px) {
+	.display-wrap {
+		height: 50vh;
+		padding: 5vh 0;
+	}
+
+	.case-study-item {
+		grid-template-columns: 10vw 1fr 200px;
+	}
+
+	.case-study-text {
+		width: 250px;
+		position: relative;
+	}
+
+	.case-study-number {
+		font-size: 140px;
+	}
+
+	.case-study-description {
+		font-size: 18px;
+	}
+
+	.case-study-preview {
+		width: 450px;
+	}
+
+	.case-study-buttons a {
+		padding: 10px;
+		margin: 8px 10px;
+	}
+
+	.view-on-hover {
+		opacity: 0;
+		font-size: 0;
+		transition: all 0.5s ease-out;
+	}
+
+	.case-study-buttons a svg {
+		font-size: 40px;
+	}
+}
+
+/* 
+*
+*
+*
+******Phone Media Query */
+@media (min-width: 375px) and (max-width: 812px) {
+	.display-wrap {
+		height: 80vh;
+		padding: 5vh 0;
+		width: 100%;
+	}
+
+	.case-study {
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+
+	.case-study-item {
+		padding-top: 10px;
+		grid-template-columns: 5vw 1fr 200px;
+		/* padding: 0 22px; */
+	}
+
+	.case-study-text {
+		width: 90% auto;
+	}
+
+	.case-study-number {
+		font-size: 95px;
+		transform: translate(-25%, -35%);
+	}
+
+	.case-study-description {
+		font-size: 18px;
+	}
+
+	.case-study-preview {
+		width: 100%; /* I cannot type width: 100% auto here because of the grid property that is being used here*/
+	}
+
+	.case-study-buttons a {
+		padding: 10px;
+		margin: 8px 10px;
+	}
+
+	.case-study-buttons a svg {
+		font-size: 40px;
+	}
+}

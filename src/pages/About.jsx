@@ -7,7 +7,8 @@ import xdLogo from "../images/xd-logo.png";
 import reactLogo from "../images/react-logo.png";
 import wpLogo from "../images/wp-logo.png";
 import happyLogo from "../images/happy-me.png";
-import useLocoScroll from "../components/hooks/useLocoScroll";
+// import useLocoScroll from "../components/hooks/useLocoScroll";
+import useLocoAbout from "../components/hooks/useLocoAbout";
 import "../css/about.css";
 
 // import { Link } from "react-router-dom";
@@ -30,7 +31,7 @@ const About = () => {
 
 	const [preloader, setPreloader] = useState(true);
 
-	useLocoScroll(!preloader);
+	useLocoAbout(!preloader);
 
 	const [timer, setTimer] = useState(3);
 
@@ -69,7 +70,7 @@ const About = () => {
 						mobileTab={{ marginLeft: open ? "0" : "100%" }}
 						closeDropdown={closeDropdown}
 					/>
-					<div className="container containerr" data-scroll-container>
+					<div className="container" id="container" data-scroll-container>
 						{/* IINTRODUCTION  */}
 						<div className="intro_section" data-scroll-section>
 							<div className="intro_text">

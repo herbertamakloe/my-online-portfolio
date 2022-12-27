@@ -12,13 +12,15 @@ import "../css/home.css";
 // import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 // import Slider from "../components/Slider/Slider";
-import ProjectsCarousel from "../components/ProjectsCarousel/ProjectsCarousel";
+// import ProjectsCarousel from "../components/ProjectsCarousel/ProjectsCarousel";
 import Lwt from "../components/Lwt/Lwt";
 import FloatingSocials from "../components/FloatingSocials/FloatingSocials";
 // import PortfolioSection from "../components/PortfolioSection/PortfolioSection";
 import Preloader from "../components/Preloader/Preloader";
 import useLocoScroll from "../components/hooks/useLocoScroll";
 import "../components/hooks/locomotiveScroll.css";
+// import NewGallery from "../components/NewGallery/NewGallery";
+import CaseStudyCarousel from "../components/CaseStudyCarousel/CaseStudyCarousel";
 // import Gallery from "../components/Gallery/Gallery";
 // import PortfolioSlider from "../components/PortfolioSlider/PortfolioSlider";
 // import "slick-carousel/slick/slick.css";
@@ -76,7 +78,11 @@ const Home = () => {
 						mobileTab={{ marginLeft: open ? "0" : "100%" }}
 						closeDropdown={closeDropdown}
 					/>
-					<div className="containerr" data-scroll-container>
+					<div
+						className="containerr"
+						id="container"
+						data-scroll-container
+					>
 						<div className="header" data-scroll-section>
 							<div className="headerText">
 								<h3>hello, I'm</h3>
@@ -110,9 +116,11 @@ const Home = () => {
 							<h1 className="case-study-title">case studies</h1>
 							{/* Slider will go here */}
 							{/* <Slider /> */}
-							<ProjectsCarousel />
+							{/* <ProjectsCarousel /> */}
+							{/* <NewGallery /> */}
 							{/* <Gallery /> */}
 							{/* <PortfolioSection /> */}
+							<CaseStudyCarousel />
 						</div>
 
 						{/* LWT Section */}

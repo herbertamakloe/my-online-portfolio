@@ -7,7 +7,8 @@ import Footer from "../components/Footer/Footer";
 import "../css/hireme.css";
 import ContactForm from "../components/ContactForm/ContactForm";
 
-import useLocoScroll from "../components/hooks/useLocoScroll";
+// import useLocoScroll from "../components/hooks/useLocoScroll";
+import useLocoHireme from "../components/hooks/useLocoHireme";
 import "../components/hooks/locomotiveScroll.css";
 import Preloader from "../components/Preloader/Preloader";
 
@@ -24,7 +25,7 @@ const Hireme = () => {
 
 	const [preloader, setPreloader] = useState(true);
 
-	useLocoScroll(!preloader);
+	useLocoHireme(!preloader);
 
 	const [timer, setTimer] = useState(2);
 
@@ -63,7 +64,7 @@ const Hireme = () => {
 						mobileTab={{ marginLeft: open ? "0" : "100%" }}
 						closeDropdown={closeDropdown}
 					/>
-					<div className="containerr" data-scroll-container>
+					<div id="container" data-scroll-container>
 						<div className="hiremecontainer" data-scroll-section>
 							<div className="hireme_text">
 								<h1 className="hireme_title">

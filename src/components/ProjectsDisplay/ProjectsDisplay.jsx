@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./projectsDisplayStyles.css";
 // import GitHub from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+import useOnScreen from "../hooks/useOnScreen";
+import cn from "classnames";
 
 const ProjectsDisplay = (props) => {
+	const ref = useRef(null);
+
+	const onScreen = useOnScreen(ref, 0.5);
+
+	useEffect(() => {
+		if (onScreen) {
+			updateActiveImage(index);
+		}
+	}, [onScreen, index]);
 	return (
-		<div className="case-study-wrapper">
-    <div></div>
+		<div
+			className={cn("case-study-wrapper", { "is-reveal": onScreen })}
+			ref={ref}
+		>
+			<div></div>
 			<div className="case-study">
 				<div className="case-study-text">
 					<div className="case-study-number">{props.number}</div>
@@ -30,7 +44,7 @@ const ProjectsDisplay = (props) => {
 					</div>
 				</div>
 			</div>
-      <div></div>
+			<div></div>
 		</div>
 	);
 };

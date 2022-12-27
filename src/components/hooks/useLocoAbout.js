@@ -2,13 +2,11 @@ import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-// import LocomotiveScrollReact from "react-locomotive-scroll";
-// import "locomotive-scroll/src/styles/";
 import "./locomotiveScroll.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useLocoScroll = (start) => {
+const useLocoAbout = (start) => {
 	useEffect(() => {
 		if (!start) return;
 
@@ -62,4 +60,4 @@ const useLocoScroll = (start) => {
 	}, [start]);
 };
 
-export default useLocoScroll;
+export default useLocoAbout;

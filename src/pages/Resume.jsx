@@ -7,9 +7,11 @@ import cvImage from "../images/cv-preview.png";
 import "../css/resume.css";
 import Footer from "../components/Footer/Footer";
 
-import useLocoScroll from "../components/hooks/useLocoScroll";
+// import useLocoScroll from "../components/hooks/useLocoScroll";
 import "../components/hooks/locomotiveScroll.css";
 import Preloader from "../components/Preloader/Preloader";
+
+import useLocoResume from "../components/hooks/useLocoResume";
 
 const Resume = () => {
 	const [open, setOpen] = useState(false);
@@ -24,7 +26,7 @@ const Resume = () => {
 
 	const [preloader, setPreloader] = useState(true);
 
-	useLocoScroll(!preloader);
+	useLocoResume(!preloader);
 
 	const [timer, setTimer] = useState(2);
 
@@ -63,7 +65,7 @@ const Resume = () => {
 						mobileTab={{ marginLeft: open ? "0" : "100%" }}
 						closeDropdown={closeDropdown}
 					/>
-					<div className="containerr" data-scroll-container>
+					<div id="container" data-scroll-container>
 						<div className="resume-container" data-scroll-section>
 							<div className="cvWrap">
 								<div className="cvPic">
